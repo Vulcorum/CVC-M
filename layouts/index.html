@@ -1,0 +1,171 @@
+{{ define "main" }}
+  <script defer language="javascript" type="text/javascript"  src="/js/index.js"></script>
+  <main class="parto">
+    {{ $trophy2 := resources.Get "/mas_logo3.png" }}
+    {{ $trophy3 := resources.Get "/rnf.png" }}
+    {{ $trophy1 := resources.Get "/psh.jpg" }}
+    {{ $trophy4 := resources.Get "/umnik.jpg" }}
+    {{ $svyaz := resources.Get "/svyaz.jpg" }}
+    {{ $trophy5 := resources.Get "/startup_house.jpg" }}
+
+   
+    <div id="vantaback1"></div>
+    <section class="first_block" id="vant">
+
+
+
+
+                    <div class="part">
+                      <div class="hello">
+
+                        <h1 class="helloh">ЦЕНТР КОМПЬЮТЕРНОГО ЗРЕНИЯ
+                        </h1>
+                     <!-- {{ range first 1 .Site.RegularPages }}
+                          {{ .Render "summary" }}
+                      {{ end }} <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>-->
+                    </div>
+                    </div>
+                    <div class="underhello">
+                      Добро пожаловать!
+                    </div>
+
+    </div>
+    </section>
+
+  <section class="second_block">
+  <div class="vanta-back2-container">
+      <div id="vantaback2"></div>
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index1") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index2") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index3") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index4") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index5") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+     </div>
+
+    <div class="article_block">{{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index6") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}</div>
+
+
+    </section>
+    <!-- CSS -->
+    
+<!-- JavaScript -->
+
+    
+    <section class="twothree">
+      
+    <div class="swiffy-slider slider-item-show3 slider-item-show2-sm slider-item-nogap slider-nav-caret slider-nav-visible slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-indicators-highlight slider-nav-animation" data-slider-nav-autoplay-interval="6000">
+      <ul class="slider-container">
+          <li class="">
+              <div class="sliden1">
+                <img src="{{ $trophy1.RelPermalink }}" style="max-width: 100%;height: auto;">
+              </div>
+              <div class="trophydesc">Финалисты Всероссийского молодежного научно-технического конкурса «Первый шаг»</div>
+          </li>
+          <li class="slide-visible">
+              <div class="sliden2">
+                <img src="{{ $trophy2.RelPermalink }}" style="max-width: 100%;height: auto;">
+              </div>
+              <div class="trophydesc">Лауреаты I - IV степеней конкурса «Новое поколение» при Международной Академии Связи</div>
+          </li>
+          <li class="slide-visible">
+              <div class="sliden3">
+                <img src="{{ $trophy3.RelPermalink }}" style="max-width: 100%;height: auto;">
+              </div>
+              <div class="trophydesc">Гранты Российского Научного Фонда</div>
+          </li>
+          <li class="slide-visible">
+              <div class="sliden4">
+                <img src="{{ $trophy4.RelPermalink }}" style="max-width: 100%;height: auto;">
+              </div>
+              <div class="trophydesc">Двухкратные победители прграммы "Умник" Фонда Содействия Инновациям</div>
+          </li>
+          <li class="">
+              <div class="sliden5">
+                <img src="{{ $trophy5.RelPermalink }}" style="max-width: 100%;height: auto;">
+              </div>
+              <div class="trophydesc">Победители Акселератора стартап-студии Университета Иннополис</div>
+          </li>
+          
+         
+      </ul>
+  
+      <button type="button" class="slider-nav"></button>
+      <button type="button" class="slider-nav slider-nav-next"></button>
+  
+      <ul class="slider-indicators">
+          
+          <li class="active"></li>
+          <li class=""></li>
+          <li class=""></li>
+          
+          
+      </ul>
+  </div>
+    </section>
+  
+
+  <div class="fourth_block">
+    <div class ="indexblog">
+    {{ range where .Pages "Section" "blog" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "indexblog") }}
+      {{ .Render "singleindex"}}
+      {{ end }}
+      {{ end }}
+  </div>
+    <div onclick="location.href='/blog'"class="boxer" href="/blog">
+      <div class="btn btn-three3">
+        Ещё
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <script src="/js/cdnjs.cloudflare.com_ajax_libs_three.js_r134_three.min.js"></script>
+  <script src="/js/vanta.globe.min.js"></script>
+  <script src="/js/vanta.dots.min.js"></script>
+  <script src="/js/slider2.js"></script>
+  <script src="/js/vanta-controller.js"></script>
+  <!-- <script src="/js/slider.js"></script> -->
+  </main>
+{{ end }}

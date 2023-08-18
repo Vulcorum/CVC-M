@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="section">
+  <div class="vanta-backlist-container">
+    <div id="vantalist"></div>
+  </div>
+  <main class="container">
+    <h1 class="title">О нас</h1>
+    <div class = "bout"> Добро пожаловать в Центр Компьютерного Зрения Московского Техничечкого Университета Связи и Информатики.</div>
+    <div class="onesumm">
+      {{ range .Pages  }}
+      {{ .Render "summary" }}
+      {{ end }}
+    </div>
+  </main>
+  <script src="/js/cdnjs.cloudflare.com_ajax_libs_three.js_r134_three.min.js"></script>
+  <script src="/js/vanta.globe.min.js"></script>
+  <script src="/js/vanta.dots.min.js"></script>
+  <script src="/js/vanta-controllerlist.js"></script>
+</section>
+{{ end }}

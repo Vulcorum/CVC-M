@@ -1,0 +1,64 @@
+  {{ $desc := resources.Get "/logo_cvc.png" }}
+  {{ $phone := resources.Get "/logo_min.png" }}
+    <div class="navbar">
+    
+
+
+
+      <div class="container2">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="logo_section">
+                  <a href="/"> <img  class="logophone"  alt="mtuci logo" src="{{ $phone.RelPermalink }}" /></a>
+                   <a href="/"> <img  class="logodesc"  alt="mtuci logo" src="{{ $desc.RelPermalink }}" /></a>
+                   
+
+    </div>
+          <div class="tohide">
+            <ul class="menu2" id="menu2">
+              <li><a href="#">Home22</a></li>
+              <li><a href="#">Benefits</a></li>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div onclick="location.href='/projects'"class="boxer3" href="/projects">
+            <div class="btn btn-three">
+             Проекты
+            </div>
+          </div>
+          <div onclick="location.href='/publications'"class="boxer3" href="/publications">
+            <div class="btn btn-three">
+             Публикации
+            </div>
+          </div>
+          <div onclick="location.href='/seminars'"class="boxer3" href="/seminars">
+            <div class="btn btn-three">
+             Семинары
+            </div>
+          </div>
+          <div onclick="location.href='/blog'"class="boxer3" href="/blog">
+            <div class="btn btn-three">
+              Блог
+            </div>
+          </div>
+          <div onclick="location.href='/about'"class="boxer3" href="/about">
+            <div class="btn btn-three">
+             О нас
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+    <div class="popup" id="popup"></div>
+    <script src="/js/burger.js"></script>
+  
+

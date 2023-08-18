@@ -1,0 +1,113 @@
+/*
+========================
+      header
+========================
+*/
+
+.header{
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+   background: rgb(255, 255, 255);
+
+    width: 100%;
+    font-family: monospace;
+    height: 15vh;
+
+    border-bottom: ridge;
+    border-color: #000000;
+    position: relative;
+
+  }
+  .tohide{
+    display: none;
+  }
+  .header_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+
+  .logo_section{
+
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+    margin-bottom: 0.5vh;
+ 
+   
+  
+   
+    
+    display:  flex;
+
+    text-align: center;
+
+
+   
+  }
+  .logophone {
+    display:none;
+
+}
+.logodesc {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;	
+}
+
+ @media  (max-width:1800px) {
+    .logophone {
+         display:block;
+         width: 100%;
+    height: 100%;
+    object-fit: cover;	
+    
+    }
+    .logo_section{
+      justify-content: right;
+    }
+    .logodesc {
+        display: none;
+    }
+}
+
+  
+  
+  @media only screen and (max-width: 1000px) {
+    .header{
+      z-index: 100;
+      display: flex;
+      flex-direction: row;
+      background: rgb(103, 202, 45);
+  
+      width: 100%;
+      font-family: monospace;
+      height: 15vh;
+  
+      border-bottom: ridge;
+      border-color: #000000;
+      position: relative;
+  
+    }
+    
+  }
+  @media (min-width:320px) and (max-width:1000px) {
+    .header_phone {
+         display:flex;
+         
+        
+    }
+    .header_desc {
+        display: none;
+    }
+}
+
+.bottom-line{
+    margin: 20px 0;
+    padding: 0;
+    height: 10px;
+    border: none;
+    border-top: 1px solid #333;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}

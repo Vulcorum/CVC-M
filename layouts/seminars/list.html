@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="section">
+
+
+
+  <div class="vanta-backlist-container">
+    <div id="vantalist"></div>
+  </div>
+  <main class="container">
+    <h1 class="title">{{ .Title }} ssss</h1>
+    <div class="onesumm">
+      {{ range .Pages  }}
+      {{ .Render "seminaronlytitle" }}
+      {{ end }}
+    </div>
+  </main>
+  <script src="/js/cdnjs.cloudflare.com_ajax_libs_three.js_r134_three.min.js"></script>
+  <script src="/js/vanta.globe.min.js"></script>
+  <script src="/js/vanta.dots.min.js"></script>
+  <script src="/js/vanta-controllerlist.js"></script>
+</section>
+{{ end }}
