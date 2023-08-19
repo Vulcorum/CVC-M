@@ -1,4 +1,5 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://vulcorum.github.io/CVC-M'
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
