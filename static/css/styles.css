@@ -569,7 +569,7 @@ div[class*=boxer3] {
 }
 
 #vantalist{
-  background-color:red;
+  background-color:rgb(161, 161, 161);
   z-index:-5;
   height:auto;
   position: sticky;
