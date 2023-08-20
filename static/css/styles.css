@@ -526,7 +526,7 @@ div[class*=boxer3] {
 }
 
 .box{
-  width: 80%;
+  width: 100%;
   height: 200px;
 
 
@@ -553,9 +553,21 @@ div[class*=boxer3] {
 .st{
   height: auto;
   margin-bottom: 3vh;
-  width: 60%;
-  margin-left: 20%;
+  width: 90%;
+  margin-left: ;
 }
+@media (width < 1000px){
+
+  .st{
+    height: auto;
+    margin-bottom: 3vh;
+    width: 90%;
+    margin-left: 3vw;
+  }
+
+
+}
+
 #vantalist{
   background-color:red;
   z-index:-5;
