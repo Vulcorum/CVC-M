@@ -117,7 +117,7 @@ div[class*=boxer3] {
 .first_block{
   height: auto;
   display:flex;
-
+min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -238,18 +238,35 @@ div[class*=boxer3] {
 
 
 .vanta-back2-container{
-  height:182vh;
+  height: auto;
+  min-height: 2000px;
   width:100%;
 
   position: absolute;
 
 
 }
+@media only screen and (max-width: 1400px) {
+  .vanta-back2-container{
+    height: auto;
+    min-height: 4000px;
+    width:100%;
+  
+    position: absolute;
+  
+  
+  }
+
+  }
 #vantaback2{
   z-index:-5;
   height:100vh;
   position: sticky;
   top:0;
+}
+.vanta-canvas{
+  width: 100%;
+  height: 100%;
 }
 .videos{
   display: flex;
@@ -420,7 +437,7 @@ div[class*=boxer3] {
     margin-left: 10%;
     
    
-    margin-bottom: 5%;
+    margin-bottom: 3vh;
   }
   @media (max-width: 1000px) {
   .indexblog{
@@ -432,18 +449,11 @@ div[class*=boxer3] {
     margin-bottom: 5%;
   }
 }
-  .boxer{
-
-      height: 33.33%;
-      width: 100%;
-      display: flex;
-      margin: 0px 0px 0px  0px ;
-
-      align-items: center;
-      margin-bottom: 5%;
-
-
-  }
+.fourth_block_btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
   
   .btn-three3 {
 
@@ -518,6 +528,7 @@ div[class*=boxer3] {
 }
 .container{
   width: 100%;
+  margin-top:15vh ;
 }
 .onesumm{
   background-color: #ffffff00;
@@ -554,7 +565,7 @@ div[class*=boxer3] {
   height: auto;
   margin-bottom: 3vh;
   width: 90%;
-  margin-left: ;
+  margin-left: 5vw;
 }
 @media (width < 1000px){
 
