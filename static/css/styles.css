@@ -148,6 +148,16 @@ min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 4vh;
   font-weight: bolder;
+  margin-bottom: 2vh;
+}
+.underbout{
+  width: 80%;
+  margin-left: 10%;
+
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vh;
+  font-weight: bolder;
 }
 
 .part{

@@ -1,5 +1,5 @@
 baseURL = 'https://vulcorum.github.io/CVC-M'
 canonifyURLs = true
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Computer Vision Center'
 
