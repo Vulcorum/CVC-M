@@ -35,10 +35,19 @@ div[class*=boxer3] {
 
 .boxer3 {
 
-  background-color: #ffffff; }
+  background-color: #ffffff00; }
 
  S
 .btn {
+
+
+	height: 6vh;
+  padding-top: 1.3vh;
+	text-align:center;
+	width: 2vw;
+	cursor: pointer;
+}
+.btn4 {
 
 
 	height: 6vh;
@@ -60,6 +69,14 @@ div[class*=boxer3] {
 ========================
 */
 .btn-three {
+
+	color: #372579;
+	transition: all 0.5s;
+	position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vh;
+}
+.btn-three4 {
 
 	color: #372579;
 	transition: all 0.5s;
@@ -99,6 +116,38 @@ div[class*=boxer3] {
 	opacity: 1;
 	transform: scale(1,1);
 }
+.btn-three4::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.1);
+	transition: all 0.3s;
+}
+.btn-three4:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.btn-three4::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 2px solid rgba(55,37,121,0.5);
+	transform: scale(1.2,1.2);
+}
+.btn-three4:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
+}
 /*
 ========================
       firstblock main page
@@ -115,9 +164,10 @@ div[class*=boxer3] {
   top:0;
 }
 .first_block{
+  padding-top: 8vh;
   height: auto;
   display:flex;
-min-height: 100vh;
+  min-height: min(100vh, 100vw);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -126,9 +176,6 @@ min-height: 100vh;
 
 
 
-}
-.landscape{
-  width: 100%;
 }
 
 
@@ -140,25 +187,23 @@ min-height: 100vh;
   font-size: 6vw;
   font-weight: bolder;
 }
-.bout{
-  width: 70%;
-  margin-left: 15%;
+@media (max-width: 1200px){
 
-  color: #000000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4vh;
-  font-weight: bolder;
-  margin-bottom: 2vh;
-}
-.underbout{
-  width: 80%;
-  margin-left: 10%;
+  .helloh{
 
-  color: #000000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3vh;
-  font-weight: bolder;
-}
+    color: #372579;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vw;
+    font-weight: bolder;
+  }
+    
+  
+  
+  
+  
+  }
+
+
 
 .part{
   top: 0;
@@ -175,7 +220,7 @@ min-height: 100vh;
 
 }
 .hello{
-  margin: 80px 10px 10px 10px;
+  margin: 5vh 0 3vh 2vw;
   text-align: center;
   line-height: 1.8;
   color: rgb(255, 255, 255);
@@ -184,11 +229,11 @@ min-height: 100vh;
   font-family:monospace;
 }
 .underhello{
-  width: 40%;
+  width: 80%;
   color: #372579;
   margin-top: 1vh;
-  margin-left: 2vh;
-  text-align: center;
+  margin-left: 8vw;
+  text-align: left;
   height: 100px;
   font-size: 5vw;
   font-weight: 900;
@@ -669,6 +714,7 @@ div[class*=sliden] {
 .trophydesc{
   margin-left: 5vw;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   max-width: 20vw;
   color: #372579;
  
@@ -687,7 +733,7 @@ div[class*=sliden] {
     max-width: 40vh;
     max-height: 40vh;
    
-   margin-left: 20vw;
+   margin-left: calc(30%);
   
     align-items: center;
     text-align: center;
@@ -706,6 +752,7 @@ div[class*=sliden] {
   .trophydesc{
     margin-left: 3vw;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     max-width: 90vw;
     color: #372579;
    

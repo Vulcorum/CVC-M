@@ -95,7 +95,7 @@ body {
 .navbar__wrap .menu > li > a:hover {
   color: rgba(255, 255, 255, 1);
 }
-@media (max-width: 1400px) {
+@media (max-width: 1070px) {
   .boxer3,.btn,.btn-three {
 
     display: none; }
