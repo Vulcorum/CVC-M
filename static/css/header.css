@@ -28,13 +28,14 @@
     top: 0;
   }
   .logo_section{
+    background-color: red;
 
     margin-top: 0.5vh;
     margin-left: 1vw;
     margin-bottom: 0.5vh;
  
-  max-height: 100%;
-  max-width: max-content;
+    max-height: 100%;
+    max-width: max-content;
   
    
     
@@ -46,7 +47,9 @@
    
   }
   .logoimg{
-    height: auto;
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
   }
 
   @media (max-width: 1070px) {
