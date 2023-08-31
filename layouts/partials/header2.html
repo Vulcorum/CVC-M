@@ -1,5 +1,6 @@
   {{ $desc := resources.Get "/logo_cvc.png" }}
   {{ $phone := resources.Get "/logo_min.png" }}
+  {{ $svg := resources.Get "/logo.svg" }}
     <div class="navbar">
     
 
@@ -14,8 +15,8 @@
             </div>
           </div>
           <div class="logo_section">
-                  <a href="/"> <img  class="logophone"  alt="mtuci logo" src="{{ $phone.RelPermalink }}" /></a>
-                   <a href="/"> <img  class="logodesc"  alt="mtuci logo" src="{{ $desc.RelPermalink }}" /></a>
+                  <a href="/"> <img  class="logophone"  alt="mtuci logo" src="{{ $svg.RelPermalink }}" /></a>
+                   <a href="/"> <img  class="logodesc"  alt="mtuci logo" src="{{ $svg.RelPermalink }}" /></a>
                    
 
     </div>
