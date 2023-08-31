@@ -33,7 +33,8 @@
     margin-left: 1vw;
     margin-bottom: 0.5vh;
  
-   
+  max-height: 100%;
+  max-width: max-content;
   
    
     
@@ -49,8 +50,11 @@
   .logo_section{
 
     margin-top: 0.5vh;
-    margin-left: 4vw;
+    margin-left: 30vw;
     margin-bottom: 0.5vh;
+    max-height: 100%;
+    max-width: max-content;
+
  
    
   
@@ -84,6 +88,8 @@
     }
     .logo_section{
       justify-content: right;
+      max-height: 100%;
+      max-width: max-content;
     }
     .logodesc {
         display: none;
